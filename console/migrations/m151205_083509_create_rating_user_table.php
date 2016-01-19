@@ -21,8 +21,8 @@ class m151205_083509_create_rating_user_table extends Migration
 
         ], $tableOptions);
 
-        $this->addForeignKey('rating_user_user_id_fk', 'create_rating', 'user_id', 'user', 'id', 'RESTRICT', 'CASCADE');
-        $this->addForeignKey('rating_user_rating_id_fk', 'create_rating', 'rating_id', 'rating', 'id', 'RESTRICT', 'CASCADE');
+        $this->addForeignKey('rating_user_user_id_fk', 'rating_user', 'user_id', 'user', 'id', 'RESTRICT', 'CASCADE');
+        $this->addForeignKey('rating_user_rating_id_fk', 'rating_user', 'rating_id', 'rating', 'id', 'RESTRICT', 'CASCADE');
     }
 
     public function down()

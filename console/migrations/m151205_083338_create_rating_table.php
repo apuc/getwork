@@ -15,8 +15,6 @@ class m151205_083338_create_rating_table extends Migration
         $this->createTable('rating', [
             'id'                 => Schema::TYPE_PK,
             'name'               => Schema::TYPE_STRING. '(255) NOT NULL',
-
-
         ], $tableOptions);
     }
 
